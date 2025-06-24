@@ -4,7 +4,6 @@ rm -rf ~/.config/nvim/.git
 nvim
 ```
 
-
 # Keyboard
 :checkhealth
 Ctrl       h j k l               Jump To Split Window
