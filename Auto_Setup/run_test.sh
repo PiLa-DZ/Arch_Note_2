@@ -39,5 +39,9 @@ fi
 cp -r ~/Arch_Note/Auto_Setup/bin ~/.local
 echo "= Copy My Scripts ====================> ok <="
 
+# // Notifications ================================
+cp -r ~/Arch_Note/Auto_Setup/dunst ~/.cofing
+echo "= Notifications ======================> ok <="
+
 # // Restart I3 ===================================
 i3-msg restart

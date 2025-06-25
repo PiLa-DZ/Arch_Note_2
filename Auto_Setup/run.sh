@@ -58,6 +58,10 @@ echo "= Git Config =========================> ok <="
 cp -r bin ~/.local
 echo "= Copy My Scripts ====================> ok <="
 
+# // Notifications ================================
+cp -r dunst ~/.cofing
+echo "= Notifications ======================> ok <="
+
 echo "= End ********************************> ok <="
 echo ""
 echo "=  -> Reboot To Finish             <- > !! <="

@@ -14,7 +14,7 @@ while [ 1 ]; do
     is_Battery_Low=$((0))
   fi
 
-  if ((Battry_Status < 5)); then
+  if ((Battry_Status <= 10)); then
     notify-send -t 10000 "Battry Very Low!!! $Battry_Status% 😭"
   fi
 

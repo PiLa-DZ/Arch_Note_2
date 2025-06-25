@@ -5,6 +5,9 @@ nvim
 ```
 
 # Keyboard
+Space+ft                         Open Terminal
+Space+fT                         Open Terminal
+Ctrl+/                          --> Opan and close terminal
 :checkhealth
 Ctrl       h j k l               Jump To Split Window
 Ctrl       Right Left Up Down    Resize  Split Window

@@ -1,20 +1,30 @@
 # I3 Settings =============================================================================================================
 # General -----------------------------------------------------------------------------------------------------------------
 set $mod Mod4
-font pango:Hack Nerd Font 22
+font pango:Hack Nerd Font 12
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+0 exec ~/Arch_Note/Auto_Setup/run_test.sh
 exec_always --no-startup-id xbacklight -set 100
-bindsym $mod+4 exec       xinput enable 13
-bindsym $mod+Shift+4 exec xinput disable 13
 # Stop Auto Sleep ---------------------------------------------------------------------------------------------------------
 #>exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
+# Polybar -----------------------------------------------------------------------------------------------------------------
+exec_always --no-startup-id ~/.config/polybar/launch.sh  &
+bindsym $mod+b        exec --no-startup-id ~/.config/polybar/launch.sh; gaps inner all set 12; exec notify-send -t 3000 "Relax Mode... 🥰🥰🥰"
+bindsym $mod+Shift+b  exec --no-startup-id killall polybar; gaps inner all set 0; exec notify-send -t 3000 "Focus Mode... 💪💪💪"
+bindsym $mod+0        exec polybar-msg cmd toggle &
 # Gaps --------------------------------------------------------------------------------------------------------------------
-gaps inner 8
+gaps inner 12
 #for_window [class="^.*"] border pixel 0
-bindsym $mod+1        gaps inner all set 0; 
-bindsym $mod+Shift+1  gaps inner all set 8;
+# --> $ i3-msg gaps inner all set 20
+bindsym $mod+9        gaps inner all set 0; 
+bindsym $mod+Shift+9  gaps inner all set 12;
+# Border Radius -----------------------------------------------------------------------------------------------------------
+bindsym $mod+1        exec sed -i 's/^corner-radius = 20/corner-radius = 0/' ~/.config/picom/picom.conf 
+bindsym $mod+Shift+1  exec sed -i 's/^corner-radius = 0/corner-radius = 20/' ~/.config/picom/picom.conf  
+# Touchpad on/off ---------------------------------------------------------------------------------------------------------
+bindsym $mod+8 exec       xinput enable 13
+bindsym $mod+Shift+8 exec xinput disable 13
 # Mous Focus --------------------------------------------------------------------------------------------------------------
 focus_follows_mouse no
 # Window Border------------------------------------------------------------------------------------------------------------
@@ -29,30 +39,16 @@ client.urgent           #E53935 #E53935 #ffffff #E53935
 # ScreenShot --------------------------------------------------------------------------------------------------------------
 bindsym Print exec scrot ~/Pictures/screenshots/%Y-%m-%d-%T-screenshot.png
 # Panel -------------------------------------------------------------------------------------------------------------------
-#bar {
-  #mode hide
-  #hidden_state hide
-  #modifier Mod4
-  #i3bar_command i3bar --transparency
-  #colors { background #00000000 }
-#}
+bar {
+  mode hide
+  hidden_state hide
+  modifier Mod4
+  i3bar_command i3bar --transparency
+  colors { background #00000000 }
+}
 # I3 My Settings ==========================================================================================================
-# Wallpaper ---------------------------------------------------------------------------------------------------------------
-# exec_always feh --bg-fill /home/nabil/.config/Wallpaper/wall3.png &
-# bindsym $mod+9 exec feh --bg-fill /home/nabil/.config/Wallpaper/wall1.png &
-# bindsym $mod+8 exec feh --bg-fill /home/nabil/.config/Wallpaper/wall2.png &
-# bindsym $mod+7 exec feh --bg-fill /home/nabil/.config/Wallpaper/wall3.png &
-# exec_always --no-startup-id feh --randomize --bg-fill ~/.config/Wallpaper/
 # Mouse Speed -------------------------------------------------------------------------------------------------------------
 exec_always --no-startup-id xinput set-prop "$(xinput list --name-only | grep -i touch)" "libinput Accel Speed" 0.7
-# Border Radius -----------------------------------------------------------------------------------------------------------
-bindsym $mod+2        exec sed -i 's/^corner-radius = 20/corner-radius = 0/' ~/.config/picom/picom.conf 
-bindsym $mod+Shift+2  exec sed -i 's/^corner-radius = 0/corner-radius = 20/' ~/.config/picom/picom.conf  
-# Polybar -----------------------------------------------------------------------------------------------------------------
-exec_always --no-startup-id ~/.config/polybar/launch.sh  &
-bindsym $mod+b        exec --no-startup-id ~/.config/polybar/launch.sh  &
-bindsym $mod+Shift+b  exec --no-startup-id killall polybar &
-bindsym $mod+3        exec polybar-msg cmd toggle &
 # Keyboard Shortcuts ======================================================================================================
 # Sound and Screen Light --------------------------------------------------------------------------------------------------
 set $refresh_i3status killall -SIGUSR1 i3status
