@@ -6,7 +6,7 @@ while [ 1 ]; do
   # Battry_Status=$(cat ~/.local/bin/My_Battery_Status.sh)
 
   if ((Battry_Status <= 20 && is_Battery_Low == 0)); then
-    notify-send -t 5000 "Battry is Low!!! $Battry_Status% 😍"
+    notify-send -t 5000 "Battry is Low!!! $Battry_Status% 😕"
     is_Battery_Low=$((1))
   fi
 
