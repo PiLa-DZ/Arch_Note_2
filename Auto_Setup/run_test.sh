@@ -43,5 +43,10 @@ echo "= Copy My Scripts ====================> ok <="
 cp -r ~/Arch_Note/Auto_Setup/dunst ~/.cofing
 echo "= Notifications ======================> ok <="
 
+# // Vim ==========================================
+cp -r ~/Arch_Note/Auto_Setup/.vimrc ~/
+cp -r ~/Arch_Note/Auto_Setup/.vim ~/.vim
+echo "= Vim ================================> ok <="
+
 # // Restart I3 ===================================
 i3-msg restart

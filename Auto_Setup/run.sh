@@ -62,6 +62,11 @@ echo "= Copy My Scripts ====================> ok <="
 cp -r dunst ~/.cofing
 echo "= Notifications ======================> ok <="
 
+# // VimRC ========================================
+cp -r .vimrc ~/
+cp -r .vim ~/.vim
+echo "= VimRC ==============================> ok <="
+
 echo "= End ********************************> ok <="
 echo ""
 echo "=  -> Reboot To Finish             <- > !! <="
