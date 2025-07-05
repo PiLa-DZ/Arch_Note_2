@@ -1,5 +1,8 @@
 " colorscheme desert
 colorscheme zaibatsu
+set number
+set relativenumber
+set nowrap
 set tabstop=4
 set shiftwidth=4
 syntax off
