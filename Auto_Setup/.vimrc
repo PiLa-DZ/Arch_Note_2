@@ -1,15 +1,18 @@
-" colorscheme desert
 colorscheme zaibatsu
+"set ignorecase
+set showcmd
 set number
 set relativenumber
 set nowrap
-set tabstop=4
-set shiftwidth=4
-syntax off
-filetype indent off   " Disable file-type-specific indentation
-syntax off            " Disable syntax highlighting
+set tabstop=3
+set shiftwidth=3
+set splitright
+set splitbelow
 
-set nocompatible
+"filetype indent off   " Disable file-type-specific indentation
+"syntax off            " Disable syntax highlighting
+
+"set nocompatible
 
 call plug#begin('~/.vim/plugged')
 
@@ -49,4 +52,4 @@ Plug 'junegunn/seoul256.vim'
 
 call plug#end()
 
-silent! colorscheme seoul256
+"silent! colorscheme seoul256
