@@ -1,17 +1,20 @@
-"colorscheme zaibatsu
-"set ignorecase
-set showcmd
-set number
-set relativenumber
-set nowrap
-set tabstop=3
-set shiftwidth=3
-set splitright
-set splitbelow
+set number relativenumber
 
+set showcmd ignorecase nowrap
+
+set tabstop=3 shiftwidth=3
+
+set splitright splitbelow
+
+set hlsearch incsearch
+set list                 " ------
+
+set clipboard=unnamed
+
+"set wildmode=longest,list,full " AutoComplate Ctrl+n Ctrl+p
+"set scrolloff=5
 "filetype indent off   " Disable file-type-specific indentation
 "syntax off            " Disable syntax highlighting
-
 "set nocompatible
 
 call plug#begin('~/.vim/plugged')
@@ -58,3 +61,40 @@ call plug#end()
 colorscheme zaibatsu
 hi Normal guibg=NONE ctermbg=NONE
 
+
+" ReMap -----------------------------------------------------
+" Jump Split Windows
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" Jump Split Windows
+inoremap <C-j> <esc><C-w>j
+inoremap <C-k> <esc><C-w>k
+inoremap <C-h> <esc><C-w>h
+inoremap <C-l> <esc><C-w>l
+
+" Jump Split Windows
+tmap <C-j> <C-w>j
+tmap <C-k> <C-w>k
+tmap <C-h> <C-w>h
+tmap <C-l> <C-w>l
+
+
+" Open Horizontal Terminal
+nnoremap <C-/> :ter <cr><C-w>:resize 5 <cr>clear<cr> 
+tmap     <C-/> <C-w>:ter <cr>
+
+" Open Vertical Terminal
+nnoremap <C-S-/> :vert ter <cr>
+tmap     <C-S-/> <C-w>:vert ter <cr>
+
+" Close Terminal
+tmap <C-m> <C-w>:q!<cr>
+
+" Jump Tabs
+nnoremap <C-S-l> gt
+tmap <C-S-l> <C-w>gt
+nnoremap <C-S-h> gT
+tmap <C-S-h> <C-w>gT
