@@ -1,4 +1,4 @@
-colorscheme zaibatsu
+"colorscheme zaibatsu
 "set ignorecase
 set showcmd
 set number
@@ -19,6 +19,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'sheerun/vim-polyglot'
 
 Plug 'junegunn/seoul256.vim'
+
+Plug 'tribela/vim-transparent'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-easy-align.git'
@@ -53,3 +55,6 @@ Plug 'junegunn/seoul256.vim'
 call plug#end()
 
 "silent! colorscheme seoul256
+colorscheme zaibatsu
+hi Normal guibg=NONE ctermbg=NONE
+
