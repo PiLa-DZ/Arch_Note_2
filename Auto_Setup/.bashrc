@@ -2,7 +2,7 @@
 #--> From Auto_Setup
 
 # Default Editor
-export EDITOR="nvim"
+export EDITOR="vim"
 
 # Hide Hostname & Username
 export PS1="\W \$"

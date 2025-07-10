@@ -7,12 +7,12 @@ set tabstop=3 shiftwidth=3
 set splitright splitbelow
 
 set hlsearch incsearch
-set list                 " ------
 
 set clipboard=unnamed
 
 "set wildmode=longest,list,full " AutoComplate Ctrl+n Ctrl+p
 "set scrolloff=5
+"set list                 " ------
 "filetype indent off   " Disable file-type-specific indentation
 "syntax off            " Disable syntax highlighting
 "set nocompatible

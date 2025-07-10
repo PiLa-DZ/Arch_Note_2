@@ -59,7 +59,7 @@ cp -r bin ~/.local
 echo "= Copy My Scripts ====================> ok <="
 
 # // Notifications ================================
-cp -r dunst ~/.cofing
+cp -r dunst ~/.config
 echo "= Notifications ======================> ok <="
 
 # // VimRC ========================================

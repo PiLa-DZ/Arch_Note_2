@@ -40,7 +40,7 @@ cp -r ~/MyGithub/Arch_Note/Auto_Setup/bin ~/.local
 echo "= Copy My Scripts ====================> ok <="
 
 # // Notifications ================================
-cp -r ~/MyGithub/Arch_Note/Auto_Setup/dunst ~/.cofing
+cp -r ~/MyGithub/Arch_Note/Auto_Setup/dunst ~/.config
 echo "= Notifications ======================> ok <="
 
 # // Vim ==========================================
