@@ -50,6 +50,7 @@ bar {
 # I3 My Settings ==========================================================================================================
 # Mouse Speed -------------------------------------------------------------------------------------------------------------
 exec_always --no-startup-id xinput set-prop "$(xinput list --name-only | grep -i touch)" "libinput Accel Speed" 0.7
+exec_always --no-startup-id xinput set-prop "$(xinput list --name-only | grep -i Glide)" "libinput Accel Speed" 0.7
 # Keyboard Shortcuts ======================================================================================================
 # Sound and Screen Light --------------------------------------------------------------------------------------------------
 set $refresh_i3status killall -SIGUSR1 i3status
