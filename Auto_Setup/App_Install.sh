@@ -1,6 +1,6 @@
 # base linux grub efibootmgr  dhcpcd iwd networkmanager reflector sudo bash-completion gvim git
 #
-sudo pacman -S --noconfirm mpv
+
 
 # Basics
 sudo pacman -S --noconfirm base-devel
@@ -58,9 +58,13 @@ sudo pacman -S --noconfirm ranger
 sudo pacman -S --noconfirm yazi
 sudo pacman -S --noconfirm neofetch
 sudo pacman -S --noconfirm btop
+sudo pacman -S --noconfirm htop
 sudo pacman -S --noconfirm tmux
 sudo pacman -S --noconfirm calc
 sudo pacman -S --noconfirm tldr
+sudo pacman -S --noconfirm cpupower
+sudo pacman -S --noconfirm wget
+sudo pacman -S --noconfirm curl
 
 # Code Editor "Neovim"
 sudo pacman -S --noconfirm neovim
@@ -78,3 +82,8 @@ sudo pacman -S --noconfirm terminus-font
 # DELL Laptop
 sudo pacman -S --noconfirm broadcom-wl
 sudo pacman -S --noconfirm xf86-video-intel
+
+# Video Player
+sudo pacman -S --noconfirm mpv
+# Image Viewer
+sudo pacman -S --noconfirm sxiv

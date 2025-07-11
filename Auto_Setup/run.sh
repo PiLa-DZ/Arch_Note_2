@@ -67,6 +67,11 @@ cp -r .vimrc ~/
 cp -r .vim ~/.vim
 echo "= VimRC ==============================> ok <="
 
+# // Chnge Default Image Viewer ===================
+xdg-mime default sxiv.desktop image/png
+xdg-mime default sxiv.desktop image/jpg
+echo "= Change Default Image Viewer ========> ok <="
+
 echo "= End ********************************> ok <="
 echo ""
 echo "=  -> Reboot To Finish             <- > !! <="

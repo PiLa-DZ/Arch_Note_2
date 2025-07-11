@@ -133,3 +133,6 @@ function y() {
 }
 
 alias "TypeScript"="~/.local/bin/TypeScript.sh"
+alias e="sudo cpupower --cpu all frequency-set  --max 1000MHz"
+alias f="sudo cpupower --cpu all frequency-set  --max"
+

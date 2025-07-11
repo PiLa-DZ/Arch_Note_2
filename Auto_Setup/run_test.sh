@@ -48,5 +48,9 @@ cp -r ~/MyGithub/Arch_Note/Auto_Setup/.vimrc ~/
 cp -r ~/MyGithub/Arch_Note/Auto_Setup/.vim ~/.vim
 echo "= Vim ================================> ok <="
 
+# // Chnge Default Image Viewer ===================
+xdg-mime default sxiv.desktop image/png
+xdg-mime default sxiv.desktop image/jpg
+
 # // Restart I3 ===================================
 i3-msg restart
