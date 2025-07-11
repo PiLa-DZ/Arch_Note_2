@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# // Xinitrc Config ===============================
-cp ~/MyGithub/Arch_Note/Auto_Setup/.xinitrc ~/.xinitrc
+# // Xprofile Config ==============================
+cp ~/MyGithub/Arch_Note/Auto_Setup/.xprofile ~/.xprofile
+echo "= Copy .xprofile =====================> ok <="
+
 
 # // Kitty Config =================================
 cp -r ~/MyGithub/Arch_Note/Auto_Setup/kitty ~/.config

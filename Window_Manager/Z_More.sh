@@ -1,3 +1,10 @@
+# authentication
+sudo pacman -S polkit-kde-agent
+sudo systemctl start polkit
+sudo systemctl enable polkit
+vim ~/.config/i3/config
+    exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
+
 # Power Button Suspend
 ```Bash
 sudo nvim /etc/systemd/logind.conf

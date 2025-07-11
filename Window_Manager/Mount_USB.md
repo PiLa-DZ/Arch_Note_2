@@ -1,5 +1,15 @@
-# Mount Usb
-    // Check if /media/usb  
+# Auto Mount ------------------------------------
+sudo pacman -S udisks2 udiskie
+// Startup file
+    udiskie &
+
+// ----------------------------------------------
+
+udisksctl mount -b /dev/sdc1
+udisksctl unmount -b /dev/sdc1
+
+# Mount Usb --------------------------------------
+    // Check if /media/usb
         $ sudo mkdir -p /media/usb
 
     // See where are your usb

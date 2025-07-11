@@ -16,6 +16,11 @@ sudo pacman -S --noconfirm xorg-xinit
 # i3 "Window Manager"
 sudo pacman -S --noconfirm i3
 
+# USP Auto mount
+sudo pacman -S --noconfirm udisks2 udiskie
+sudo pacman -S --noconfirm polkit-kde-agent
+
+
 # polybar "Top Bar"
 sudo pacman -S --noconfirm polybar
 
@@ -66,6 +71,8 @@ sudo pacman -S --noconfirm dysk
 sudo pacman -S --noconfirm cpupower
 sudo pacman -S --noconfirm wget
 sudo pacman -S --noconfirm curl
+sudo pacman -S --noconfirm zip unzip
+sudo pacman -S --noconfirm man
 
 # Code Editor "Neovim"
 sudo pacman -S --noconfirm neovim

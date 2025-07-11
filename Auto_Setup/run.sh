@@ -10,9 +10,9 @@ echo "= Pacman Mirrorlist ==================> ok <="
 #./App_Install.sh
 echo "= Install Apps =======================> ok <="
 
-# // Xinitrc Config ===============================
-cp .xinitrc ~/.xinitrc
-echo "= Copy .xinitrc ======================> ok <="
+# // Xprofile Config ==============================
+cp .xprofile ~/.xprofile
+echo "= Copy .xprofile =====================> ok <="
 
 # // Kitty Config =================================
 cp -r kitty ~/.config
