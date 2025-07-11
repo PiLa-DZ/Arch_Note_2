@@ -53,7 +53,7 @@ sudo pacman -S --noconfirm scrot
 # Notifications
 sudo pacman -S --noconfirm dunst
 sudo pacman -S --noconfirm libnotify
-sudo pacman -S --noconfirm apci
+sudo pacman -S --noconfirm acpi
 
 # Terminal
 sudo pacman -S --noconfirm kitty
