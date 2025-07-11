@@ -133,6 +133,12 @@ function y() {
 }
 
 alias "TypeScript"="~/.local/bin/TypeScript.sh"
-alias e="sudo cpupower --cpu all frequency-set  --max 1000MHz"
-alias f="sudo cpupower --cpu all frequency-set  --max"
+alias cpu="sudo cpupower --cpu all frequency-set  --max 1000MHz"
+alias cpua="sudo cpupower --cpu all frequency-set  --max"
+alias a="~/MyGithub/"
+alias ay="~/MyGithub/; y"
+alias b="~/Test/"
+alias by="~/Test/; y"
+alias c="~/.config/"
+alias cy="~/.config/; y"
 
