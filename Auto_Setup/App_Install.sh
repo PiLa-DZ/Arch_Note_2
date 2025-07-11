@@ -62,6 +62,7 @@ sudo pacman -S --noconfirm htop
 sudo pacman -S --noconfirm tmux
 sudo pacman -S --noconfirm calc
 sudo pacman -S --noconfirm tldr
+sudo pacman -S --noconfirm dysk
 sudo pacman -S --noconfirm cpupower
 sudo pacman -S --noconfirm wget
 sudo pacman -S --noconfirm curl
