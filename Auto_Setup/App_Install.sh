@@ -71,7 +71,6 @@ sudo pacman -S --noconfirm neovim
 sudo pacman -S --noconfirm lua
 sudo pacman -S --noconfirm xsel
 sudo pacman -S --noconfirm xclip
-git clone https://github.com/NvChad/starter ~/.config/nvim
 
 # Browser "Firefox"
 sudo pacman -S --noconfirm firefox
@@ -87,3 +86,4 @@ sudo pacman -S --noconfirm xf86-video-intel
 sudo pacman -S --noconfirm mpv
 # Image Viewer
 sudo pacman -S --noconfirm sxiv
+
