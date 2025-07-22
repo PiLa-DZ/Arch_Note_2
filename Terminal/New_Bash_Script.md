@@ -5,3 +5,6 @@ sed -i 's/^Nabil/a/' ~/test/t1.md
     $ sudo pacman -S wmctrl
     $ wmctrl -lp
     $ ps // PID
+
+# Show Keyboard buttons name
+showkey -s

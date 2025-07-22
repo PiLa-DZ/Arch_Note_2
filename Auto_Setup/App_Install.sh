@@ -20,7 +20,6 @@ sudo pacman -S --noconfirm i3
 sudo pacman -S --noconfirm udisks2 udiskie
 sudo pacman -S --noconfirm polkit-kde-agent
 
-
 # polybar "Top Bar"
 sudo pacman -S --noconfirm polybar
 
@@ -28,8 +27,8 @@ sudo pacman -S --noconfirm polybar
 sudo pacman -S --noconfirm rofi
 sudo pacman -S --noconfirm papirus-icon-theme
 sudo pacman -S --noconfirm rofi-emoji
-suod pacman -S --noconfirm xdotool
-suod pacman -S --noconfirm wtype
+sudo pacman -S --noconfirm xdotool
+sudo pacman -S --noconfirm wtype
 sudo pacman -S --noconfirm noto-fonts-emoji
 sudo pacman -S --noconfirm ttf-font-awesome
 
@@ -41,6 +40,12 @@ sudo pacman -S --noconfirm feh
 
 # Main Font
 sudo pacman -S --noconfirm ttf-hack-nerd
+# Arabic Fonts
+sudo pacman -S --noconfirm noto-fonts noto-fonts-cjk ttf-dejavu ttf-liberation
+# Keyboard Layout
+sudo pacman -S --noconfirm xorg-setxkbmap
+sudo pacman -S --noconfirm xkeyboard-config
+
 
 # Audio
 sudo pacman -S --noconfirm pulseaudio
@@ -61,7 +66,6 @@ sudo pacman -S --noconfirm kitty
 # Terminal Tools
 sudo pacman -S --noconfirm ranger
 sudo pacman -S --noconfirm yazi
-sudo pacman -S --noconfirm neofetch
 sudo pacman -S --noconfirm btop
 sudo pacman -S --noconfirm htop
 sudo pacman -S --noconfirm tmux
@@ -73,6 +77,7 @@ sudo pacman -S --noconfirm wget
 sudo pacman -S --noconfirm curl
 sudo pacman -S --noconfirm zip unzip
 sudo pacman -S --noconfirm man
+sudo pacman -S --noconfirm unclutter
 
 # Code Editor "Neovim"
 sudo pacman -S --noconfirm neovim
@@ -92,6 +97,12 @@ sudo pacman -S --noconfirm xf86-video-intel
 
 # Video Player
 sudo pacman -S --noconfirm mpv
+sudo pacman -S --noconfirm yt-dlp
 # Image Viewer
 sudo pacman -S --noconfirm sxiv
+
+# Information
+sudo pacman -S --noconfirm countryfetch
+sudo pacman -S --noconfirm fastfetch
+sudo pacman -S --noconfirm hyfetch
 

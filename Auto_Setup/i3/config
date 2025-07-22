@@ -8,7 +8,10 @@ exec_always --no-startup-id xbacklight -set 100
 # Stop Auto Sleep ---------------------------------------------------------------------------------------------------------
 #>exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
+# Authentication ----------------------------------------------------------------------------------------------------------
 exec --no-startup-id /usr/lib/polkit-kde-authentication-agent-1
+# Keyboad Layout Arabic ---------------------------------------------------------------------------------------------------
+exec --no-startup-id setxkbmap -layout us,ara -option grp:alt_shift_toggle
 # Polybar -----------------------------------------------------------------------------------------------------------------
 exec_always --no-startup-id ~/.config/polybar/launch.sh  &
 bindsym $mod+b        exec --no-startup-id ~/.config/polybar/launch.sh; gaps inner all set 12; exec notify-send -t 3000 "Relax Mode... 🥰🥰🥰"

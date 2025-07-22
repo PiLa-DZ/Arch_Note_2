@@ -85,13 +85,12 @@ tmap <C-l> <C-w>l
 " Open Horizontal Terminal
 nnoremap <C-/> :ter <cr><C-w>:resize 5 <cr>clear<cr> 
 tmap     <C-/> <C-w>:ter <cr>
-
-" Open Vertical Terminal
-nnoremap <C-S-/> :vert ter <cr>
-tmap     <C-S-/> <C-w>:vert ter <cr>
+" For Tmux
+nnoremap <C-_> :ter <cr><C-w>:resize 5 <cr>clear<cr> 
+tmap     <C-_> <C-w>:ter <cr>
 
 " Close Terminal
-tmap <C-m> <C-w>:q!<cr>
+tmap <C-n> <C-w>:q!<cr>
 
 " Jump Tabs
 nnoremap <C-S-l> gt

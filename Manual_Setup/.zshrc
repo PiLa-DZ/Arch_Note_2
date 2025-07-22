@@ -141,4 +141,4 @@ alias b="~/Test/"
 alias by="~/Test/; y"
 alias c="~/.config/"
 alias cy="~/.config/; y"
-
+alias Timer="~/.local/bin/Timer.sh"

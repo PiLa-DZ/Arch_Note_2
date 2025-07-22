@@ -7,3 +7,7 @@
     $ sudo pacman -Rdd linux-firmware
     $ sudo pacman -Syu linux-firmware
 
+
+# error: GPGME error: No data
+sudo rm -R /var/lib/pacman/sync
+
