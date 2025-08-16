@@ -5,6 +5,7 @@ font pango:Hack Nerd Font 12
 bindsym $mod+Shift+r restart
 bindsym $mod+Shift+0 exec ~/MyGithub/Arch_Note/Auto_Setup/run_test.sh
 exec_always --no-startup-id xbacklight -set 100
+exec --no-startup sudo cpupower --cpu all frequency-set  --max 1200MHz
 # Stop Auto Sleep ---------------------------------------------------------------------------------------------------------
 #>exec --no-startup-id xset s off
 exec --no-startup-id xset -dpms
