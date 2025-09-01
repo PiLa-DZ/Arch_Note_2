@@ -23,7 +23,7 @@ Plug 'sheerun/vim-polyglot'
 
 Plug 'junegunn/seoul256.vim'
 
-Plug 'tribela/vim-transparent'
+"Plug 'tribela/vim-transparent'
 
 " Any valid git URL is allowed
 " Plug 'https://github.com/junegunn/vim-easy-align.git'
@@ -59,41 +59,6 @@ call plug#end()
 
 "silent! colorscheme seoul256
 colorscheme zaibatsu
-hi Normal guibg=NONE ctermbg=NONE
+"hi Normal guibg=NONE ctermbg=NONE
 
 
-" ReMap -----------------------------------------------------
-" Jump Split Windows
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
-
-" Jump Split Windows
-inoremap <C-j> <esc><C-w>j
-inoremap <C-k> <esc><C-w>k
-inoremap <C-h> <esc><C-w>h
-inoremap <C-l> <esc><C-w>l
-
-" Jump Split Windows
-tmap <C-j> <C-w>j
-tmap <C-k> <C-w>k
-tmap <C-h> <C-w>h
-tmap <C-l> <C-w>l
-
-
-" Open Horizontal Terminal
-nnoremap <C-/> :ter <cr><C-w>:resize 5 <cr>clear<cr> 
-tmap     <C-/> <C-w>:ter <cr>
-" For Tmux
-nnoremap <C-_> :ter <cr><C-w>:resize 5 <cr>clear<cr> 
-tmap     <C-_> <C-w>:ter <cr>
-
-" Close Terminal
-tmap <C-n> <C-w>:q!<cr>
-
-" Jump Tabs
-nnoremap <C-S-l> gt
-tmap <C-S-l> <C-w>gt
-nnoremap <C-S-h> gT
-tmap <C-S-h> <C-w>gT
