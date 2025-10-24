@@ -2,7 +2,7 @@
     $ sudo pacman -S networkmanager
     $ sudo systemctl enable NetworkManager
     $ sudo systemctl start NetworkManager
-    $ nmctl d
-    $ nmctl r wifi on
-    $ nmctl d wifi list
-    $ nmctl d wifi connect SSID password WiFi-Password
+    $ nmcli d
+    $ nmcli r wifi on
+    $ nmcli d wifi list
+    $ nmcli d wifi connect SSID password WiFi-Password
