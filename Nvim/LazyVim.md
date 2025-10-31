@@ -4,6 +4,13 @@ rm -rf ~/.config/nvim/.git
 nvim
 ```
 
+# New Shurtcut
+Space+cm
+    i --> Install Package
+    X --> Uninstall Package
+[d  --> Next Error
+Space+ca --> Fix Error
+
 # Keyboard
 Space+ft                         Open Terminal
 Space+fT                         Open Terminal
@@ -87,4 +94,12 @@ nvim ~/.config/nvim/init.lua
 ```
 
 
+
+# Neovide
+# Change Font Size 
+vim ~/.config/nvim/init.lua
+  if vim.g.neovide then
+    vim.g.neovide_font = "Hack Nerd Font:h8"
+    vim.o.guifont = "Hack Nerd Font:h8"
+  end
 
