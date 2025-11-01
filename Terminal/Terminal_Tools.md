@@ -8,6 +8,8 @@
     // dysk --> df 
         $ sudo pacman -S dysk 
         $ dysk
+        sudo du -sch /home/nabil/* /home/nabil/.*
+        df -h
 
 # Fish Shell
 $ sudo pacma -S fish
