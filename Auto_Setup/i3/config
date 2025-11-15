@@ -65,7 +65,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 # decrease screen brightness
 # Apps --------------------------------------------------------------------------------------------------------------------
-bindsym $mod+Return       exec --no-startup-id kitty
+bindsym $mod+Return       exec --no-startup-id xfce4-terminal 
 bindsym $mod+Shift+Return exec --no-startup-id firefox
 bindsym $mod+n            exec --no-startup-id rofi     -show drun
 bindsym $mod+Shift+n      exec --no-startup-id rofi     -modi emoji -show emoji
