@@ -1,3 +1,10 @@
+# Create a bootable USB
+lsblk
+sudo umount /dev/sdb1
+sudo umount /dev/sdb2
+sudo dd if=/path/to/your/image.iso of=/dev/sdb bs=4M status=progress oflag=sync
+sudo systemctl reboot --firmware-setup
+
 # authentication
 sudo pacman -S polkit-kde-agent
 sudo systemctl start polkit

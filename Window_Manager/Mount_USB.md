@@ -23,3 +23,6 @@ udisksctl unmount -b /dev/sdc1
 
     // Unmount your usb
         $ sudo umount /media/usb
+
+sudo dd if=/path/to/your/image.iso of=/dev/sdb bs=4M status=progress oflag=sync
+
