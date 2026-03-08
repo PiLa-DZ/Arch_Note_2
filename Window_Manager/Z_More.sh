@@ -37,7 +37,8 @@ sudo nvim /etc/default/cpupower
 # ASCII Art
 ```Bash
 figlet -f Bloody "Nabil" | xclip -selection c
-figlet  Welcome Nabil -f ANSI_Shadow -t -c | lolcat
+figlet  "Welcome Nabil" -f ANSI_Shadow -t -c | lolcat
+figlet  -f ANSI_Shadow -t -c  "Welcome Nabil"| lolcat
 figlet  Welcome Nabil -f Bloody -c | lolcat
 figlet  Welcome Nabil -f Blocks -c | lolcat
 figlet  Welcome Nabil -f 3d -c | lolcat
